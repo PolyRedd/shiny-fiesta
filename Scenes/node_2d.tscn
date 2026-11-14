@@ -15,7 +15,7 @@ radius = 26.242195
 [node name="Node2D" type="Node2D" unique_id=1125393916]
 
 [node name="StaticBody2D3" parent="." unique_id=1122912586 instance=ExtResource("1_hh5uf")]
-position = Vector2(1460, 540)
+position = Vector2(1487, 480)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1712987480]
 position = Vector2(529, 521)

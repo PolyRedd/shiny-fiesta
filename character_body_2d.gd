@@ -8,8 +8,8 @@ const WALL_JUMP_FORCE = 350
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
-		if is_on_wall() and Input.is_action_pressed("ui_up"):
-			velocity += get_gravity() * delta * 0.3
+		if is_on_wall():
+			velocity += get_gravity() * delta * 0.1
 		else: 
 			velocity += get_gravity() * delta
 

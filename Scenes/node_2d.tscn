@@ -457,7 +457,7 @@ position = Vector2(-423.53125, -1530.875)
 shape = SubResource("RectangleShape2D_5k0a6")
 
 [node name="Player" parent="." unique_id=1813843307 instance=ExtResource("2_v1qfn")]
-position = Vector2(163, -724)
+position = Vector2(146, -1239)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=52272134]
 scale = Vector2(4, 4)

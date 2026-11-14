@@ -3,22 +3,24 @@ extends CharacterBody2D
 
 var SPEED = 300.0
 var JUMP_VELOCITY = -400.0
-const WALL_JUMP_FORCE = 350
 
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-# ERROR line has been deleted by code rot
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		
+	# Bouncing
+	if is_on_floor():
 		velocity.y = JUMP_VELOCITY
+
+	if is_on_ceiling():
+		velocity.y = -JUMP_VELOCITY
 	if is_on_wall():
 		velocity.y = 50
-		if Input.action_press("ui_right"):
+		if Input.is_action_pressed("ui_right"):
 			velocity.y = 0-JUMP_VELOCITY
 			velocity.x = 0-JUMP_VELOCITY
-		if Input.action_press("ui_left"):
+		if Input.is_action_pressed("ui_left"):
 			velocity.y = JUMP_VELOCITY
 			velocity.x = JUMP_VELOCITY
 

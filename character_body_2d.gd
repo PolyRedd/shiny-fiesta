@@ -12,8 +12,9 @@ func _physics_process(delta):
 			velocity += get_gravity() * delta * 0.1
 		else: 
 			velocity += get_gravity() * delta
-		
-		if is_on_wall() and Input
+	
+	
+	
 # ERROR line has been deleted by code rot
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():

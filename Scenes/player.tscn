@@ -18,3 +18,5 @@ scale = Vector2(1.0476191, 1.0118577)
 shape = SubResource("CircleShape2D_hh5uf")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=902114996]
+limit_right = 1300
+limit_bottom = 750

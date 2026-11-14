@@ -19,10 +19,10 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 	if is_on_wall():
-		X * (-1)
+		X *= -1
 	
 	if Input.is_action_just_pressed("ui_accept") and not is_on_floor() and is_on_wall():
-		var X = 0
+	
 		var wall_normal = get_wall_normal()
 		velocity.y = JUMP_VELOCITY
 		velocity.x = wall_normal.x * WALL_JUMP_FORCE

@@ -20,18 +20,18 @@ radius = 26.242195
 script = ExtResource("1_6whob")
 
 [node name="StaticBody2D3" parent="." unique_id=1122912586 instance=ExtResource("1_hh5uf")]
-position = Vector2(1337, 518)
+position = Vector2(1316, 510)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D3" unique_id=1875498698]
 position = Vector2(-196, -190)
 shape = SubResource("RectangleShape2D_fkfs6")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D3/CollisionShape2D2" unique_id=1132504961]
-position = Vector2(-1115, -61)
+position = Vector2(-1074, -49)
 shape = SubResource("RectangleShape2D_fkfs6")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1712987480]
-position = Vector2(529, 521)
+position = Vector2(537, 500)
 physics_material_override = SubResource("PhysicsMaterial_3m0ep")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1714530837]

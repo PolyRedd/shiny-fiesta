@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://crmtox80u4qkh"]
 
+[ext_resource type="Script" uid="uid://byb8bfk14bqbf" path="res://Scenes/node_2d.gd" id="1_6whob"]
 [ext_resource type="PackedScene" uid="uid://d22l021sq8l6k" path="res://block.tscn" id="1_hh5uf"]
 [ext_resource type="Script" uid="uid://cbruvxqjqb2cv" path="res://character_body_2d.gd" id="1_j2wod"]
 [ext_resource type="Texture2D" uid="uid://brgxswuadir3p" path="res://Assets/ballt1.png" id="2_v1qfn"]
@@ -16,6 +17,7 @@ size = Vector2(378, 20)
 radius = 26.242195
 
 [node name="Node2D" type="Node2D" unique_id=1125393916]
+script = ExtResource("1_6whob")
 
 [node name="StaticBody2D3" parent="." unique_id=1122912586 instance=ExtResource("1_hh5uf")]
 position = Vector2(1327, 547)
@@ -48,5 +50,3 @@ texture = ExtResource("2_v1qfn")
 position = Vector2(1, 3)
 scale = Vector2(1.0476191, 1.0118577)
 shape = SubResource("CircleShape2D_hh5uf")
-
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=906573558]

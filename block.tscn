@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d22l021sq8l6k"]
 
 [ext_resource type="Texture2D" uid="uid://r1yat2ldcpj1" path="res://kep.jpg" id="1_im0tn"]
+[ext_resource type="Texture2D" uid="uid://dhjk0h5q7ju30" path="res://Scenes/norbi.png" id="2_xfwl5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ca88"]
 size = Vector2(143, 302.5)
@@ -15,3 +16,11 @@ shape = SubResource("RectangleShape2D_1ca88")
 position = Vector2(10.999998, 1)
 scale = Vector2(0.35346758, 0.7472036)
 texture = ExtResource("1_im0tn")
+
+[node name="norbi" type="CharacterBody2D" parent="." unique_id=798384144]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="norbi" unique_id=1197632139]
+visible = false
+position = Vector2(829, 446)
+texture = ExtResource("2_xfwl5")

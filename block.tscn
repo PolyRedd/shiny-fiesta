@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d22l021sq8l6k"]
 
 [ext_resource type="Texture2D" uid="uid://r1yat2ldcpj1" path="res://kep.jpg" id="1_im0tn"]
-[ext_resource type="Texture2D" uid="uid://dhjk0h5q7ju30" path="res://Scenes/norbi.png" id="2_xfwl5"]
+[ext_resource type="Texture2D" uid="uid://dhjk0h5q7ju30" path="res://Assets/norbi.png" id="2_xfwl5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ca88"]
 size = Vector2(143, 302.5)

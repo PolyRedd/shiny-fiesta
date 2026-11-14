@@ -12,6 +12,7 @@ func _physics_process(delta):
 	# Bouncing
 	if is_on_floor():
 		velocity.y = JUMP_VELOCITY
+
 	if is_on_ceiling():
 		velocity.y = -JUMP_VELOCITY
 	if is_on_wall():
@@ -26,5 +27,4 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
-	
 	

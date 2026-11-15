@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cb5n2r858u8xl" path="res://Assets/background_0.png" id="1_3kf3n"]
 [ext_resource type="Script" uid="uid://dlsrlpio08k5m" path="res://Scenes/menu.gd" id="1_6pedr"]
+[ext_resource type="FontFile" uid="uid://b5o4unt10ci0q" path="res://Assets/JetBrainsMono-VariableFont_wght.ttf" id="3_syfuq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5glfu"]
 texture = ExtResource("1_3kf3n")
@@ -54,12 +55,18 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_5glfu")
 text = "Start Game"
 
 [node name="Label" type="Label" parent="." unique_id=1629960324]
-layout_mode = 0
-offset_left = 529.0
-offset_top = 123.0
-offset_right = 569.0
-offset_bottom = 146.0
-text = "Game name"
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -77.0
+offset_top = 150.0
+offset_right = 77.0
+offset_bottom = 195.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_syfuq")
+theme_override_font_sizes/font_size = 32
+text = "In Bounce"
 
 [node name="Label2" type="Label" parent="." unique_id=616505629]
 layout_mode = 0

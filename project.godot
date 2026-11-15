@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="In Bounce"
-run/main_scene="uid://crmtox80u4qkh"
+run/main_scene="uid://w1svxlrw33rc"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [display]
@@ -22,6 +22,10 @@ window/stretch/aspect="expand"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/gittydot/plugin.cfg")
+
+[global_group]
+
+Player=""
 
 [input]
 

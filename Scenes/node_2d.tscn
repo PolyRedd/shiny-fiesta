@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cb5n2r858u8xl" path="res://Assets/background_0.png" id="2_6whob"]
 [ext_resource type="PackedScene" uid="uid://draufa2slq2ye" path="res://Scenes/player.tscn" id="2_v1qfn"]
 [ext_resource type="Texture2D" uid="uid://icvm4ov0kh06" path="res://Assets/Tiles/Tiles/Assets/Assets.png" id="3_hh5uf"]
+[ext_resource type="Script" uid="uid://dxi7m306aqlqg" path="res://Scenes/area_2d.gd" id="5_u7krg"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3m0ep"]
 
@@ -524,7 +525,7 @@ scale = Vector2(1, 11.600005)
 shape = SubResource("RectangleShape2D_3m0ep")
 
 [node name="Player" parent="." unique_id=1813843307 instance=ExtResource("2_v1qfn")]
-position = Vector2(1026, 574)
+position = Vector2(1026, 579)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=52272134]
 scale = Vector2(4, 4)
@@ -532,11 +533,13 @@ tile_map_data = PackedByteArray("AAACAAoAAAADAAAAAAADAAoAAAADAAAAAAAOAAoAAAADAAA
 tile_set = SubResource("TileSet_fkfs6")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=2044216741]
-position = Vector2(-2334, -1139)
+position = Vector2(-2334, -1118)
+scale = Vector2(0.58725345, 0.86821806)
+script = ExtResource("5_u7krg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1176841251]
 position = Vector2(-2.5002441, 18.997559)
 scale = Vector2(11.499525, 11.499525)
 shape = SubResource("RectangleShape2D_5glfu")
 
-[connection signal="body_entered" from="Area2D" to="Player" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

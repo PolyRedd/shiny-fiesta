@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://mciestroj6l"]
+
+[node name="Control" type="Control" unique_id=885539658]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1073439431]
+layout_mode = 0
+offset_left = -177.0
+offset_top = -73.99999
+offset_right = -137.0
+offset_bottom = -33.999992
+scale = Vector2(38.895847, 20.502533)
+
+[node name="Label" type="Label" parent="." unique_id=1370360591]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -328.99994
+offset_right = -44.99994
+offset_bottom = 45.0
+grow_horizontal = 2
+scale = Vector2(2.1847806, 2.333134)
+theme_override_font_sizes/font_size = 32
+text = "Thanks for playing"

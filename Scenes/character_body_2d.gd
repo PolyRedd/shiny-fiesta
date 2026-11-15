@@ -53,3 +53,4 @@ func _physics_process(delta):
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	get_tree().change_scene_to_file("res://Scenes/Level2.tscn")
+# btw there are 3 norbi's in this game you gotta find them (not only in the main game but also in the files)

@@ -45,18 +45,13 @@ offset_right = 187.0
 offset_bottom = 52.0
 grow_horizontal = 2
 grow_vertical = 2
+alignment = 1
 
 [node name="Start" type="Button" parent="VBoxContainer" unique_id=474810469]
 layout_mode = 2
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_5glfu")
 text = "Start Game"
-
-[node name="Exit" type="Button" parent="VBoxContainer" unique_id=275608469]
-layout_mode = 2
-theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_5glfu")
-text = "Exit"
 
 [node name="Label" type="Label" parent="." unique_id=1629960324]
 layout_mode = 0
@@ -66,5 +61,13 @@ offset_right = 569.0
 offset_bottom = 146.0
 text = "Game name"
 
+[node name="Label2" type="Label" parent="." unique_id=616505629]
+layout_mode = 0
+offset_left = 890.0
+offset_top = 590.0
+offset_right = 1151.0
+offset_bottom = 639.0
+text = "A/D and left/right arrows to move
+Space to jump higher "
+
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

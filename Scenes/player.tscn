@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://draufa2slq2ye"]
 
-[ext_resource type="Script" uid="uid://cbruvxqjqb2cv" path="res://character_body_2d.gd" id="1_cvnsp"]
+[ext_resource type="Script" uid="uid://cbruvxqjqb2cv" path="res://Scenes/character_body_2d.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://brgxswuadir3p" path="res://Assets/ballt1.png" id="2_6t5aa"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hh5uf"]
@@ -20,3 +20,27 @@ shape = SubResource("CircleShape2D_hh5uf")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=902114996]
 limit_right = 1300
 limit_bottom = 750
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera2D" unique_id=1075547245]
+visible = false
+
+[node name="Panel" type="Panel" parent="Camera2D/CanvasLayer" unique_id=1523203352]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -577.0
+offset_top = -327.0
+offset_right = 577.0
+offset_bottom = 331.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Camera2D/CanvasLayer" unique_id=1441014589]
+offset_left = 441.0
+offset_top = 69.0
+offset_right = 718.0
+offset_bottom = 157.0
+theme_override_font_sizes/font_size = 64
+text = "Congrats"

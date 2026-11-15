@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://icvm4ov0kh06"
-path="res://.godot/imported/Assets.png-ae16721b5ea0e2666d1329955e8ebdfa.ctex"
+uid="uid://c0krqppxxgsnl"
+path="res://.godot/imported/entrance.png-f3f9c2d76bd6bcf0a2b6a846a67a324e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tiles/Tiles/Assets/Assets.png"
-dest_files=["res://.godot/imported/Assets.png-ae16721b5ea0e2666d1329955e8ebdfa.ctex"]
+source_file="res://Assets/Tiles/Tiles/Social/entrance.png"
+dest_files=["res://.godot/imported/entrance.png-f3f9c2d76bd6bcf0a2b6a846a67a324e.ctex"]
 
 [params]
 

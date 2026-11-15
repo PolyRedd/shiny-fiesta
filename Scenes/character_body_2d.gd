@@ -29,7 +29,7 @@ func _physics_process(delta):
 		var wall_normal = get_wall_normal()
 		velocity.y = JUMP_VELOCITY
 		velocity.x = wall_normal.x * WALL_JUMP_FORCE
-	
+
 	if Input.is_action_pressed("ui_left") or Input.is_action_pressed("ui_right"):
 		if Input.is_action_pressed("ui_left"):
 			X -= 10
@@ -44,8 +44,8 @@ func _physics_process(delta):
 			X += 5
 		elif X > 0 :
 			X -= 5
-		
 			
+	get_child(0).rotation += X * delta * 0.011
 	position.x += X * delta
 	move_and_slide()
 	#this movement took me 3 hours
